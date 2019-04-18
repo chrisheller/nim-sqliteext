@@ -122,7 +122,6 @@ macro sqliteFunction*(body: untyped) : typed =
   result = newStmtList()
   result.add(body)
   result.add(wrapperProcDef)
-  echo result.toStrLit
 
   let funcDef = FuncDef(sqlFunc : $procName, 
                         numOfArgs : argcount,
