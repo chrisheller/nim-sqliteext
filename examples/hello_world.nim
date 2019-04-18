@@ -2,14 +2,9 @@
 ##
 ## Test with something like the following:
 ##
-## sqlite3
-## sqlite> .load examples/libhello_world
-## sqlite> CREATE TABLE testing(id INTEGER PRIMARY KEY, name STRING);
-## sqlite> insert into testing values (1, 'Alice'), (2, 'Bob');
-## sqlite> select id, helloFunc(name, id), goodbyeFunc(name), numberFunc(name) from testing;
+## sqlite3 < examples/hello_world.sql
 ## 1|Hello there Alice, your ID is 1|Goodbye for now Alice|5
 ## 2|Hello there Bob, your ID is 2|Goodbye for now Bob|3
-## sqlite> 
 ##
 ## See README.md for more information if you receive an error about no "load" command
 ##
