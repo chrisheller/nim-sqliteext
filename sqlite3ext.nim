@@ -1,5 +1,6 @@
 ## Module to help with building SQLite extensions in Nim
 ##
+## See examples directory to get started
 
 import macros
 import os
